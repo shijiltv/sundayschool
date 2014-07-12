@@ -8,9 +8,6 @@
 </head>
 <body id="top">
 <div class="wrapper">
-<div id="topnav">
-	  Welcome Shijil  &nbsp; <a id="go"   href="index.html">Sign Out</a>
-	</div>
 
   <!-- ####################################################################################################### -->
   <div id="header">
@@ -34,13 +31,12 @@
     </div>
     <div id="topnav">
       <ul>
-        <li><a href="index.html">Sunday School</a></li>
+           <li ><a href="index.html">Sunday School</a></li>
         <li ><a href="otherprogram.html">Other Programs</a></li>
-        <li class="active"><a href="reqforsess.html">Request a Session</a></li>
-        <li><a href="schedsess.html">Schedule Session</a></li>
+        <li ><a href="reqforsess.html">Request a Session</a></li>
+        <li class="active"><a href="schedsess.html">Schedule Session</a></li>
         <li><a href="mngsessreq.html">Manage Session</a></li>
         <li><a href="contactus.html">Contac us</a></li>
-
       </ul>
     </div>
     <br class="clear" />
@@ -49,7 +45,7 @@
     <div id="content">
     <br class="clear" />
 
-      <h1>Request for a session</h1>
+      <h1>Schedule Session</h1>
 
       <div id="comments">
 
@@ -65,10 +61,14 @@
 			<option value="ASP.NET">Other..</option>
 		</select>
 		&nbsp;&nbsp;
-            <input type="text" name="NooP" id="NooP" value=""  />
+            <input type="text" name="other" id="other" value=""  />
 
           </p>
-
+	  <p>
+            <label for="image"><small>Image</small></label>
+		&nbsp;&nbsp;
+            <input type="file" name="image" id="image" value="" size="22" />
+          </p>
           <p>
             <label for="sessiontype"><small>Session Type</small></label>
 		&nbsp;&nbsp;
@@ -77,11 +77,8 @@
             <input type="radio" name="sessiontype" id="sessiontype" value="WorkShop" />
             <label for="sessiontype"><small>WorkShop</small></label>
             <input type="radio" name="sessiontype" id="sessiontype" value="Camp" />
-            <label for="sessiontype"><small>Camp</small></label>
-            <input type="radio" name="sessiontype" id="sessiontype" value="Camp" />
             <label for="sessiontype"><small>Other</small></label>
           </p>
-
           <p>
             <label for="sessmode"><small>Mode</small></label>
 		&nbsp;&nbsp;
@@ -95,11 +92,6 @@
             <label for="sessmode"><small>Other</small></label>
           </p>
 
-          <p>
-            <label for="NooP"><small>No of Participants</small></label>
-		&nbsp;&nbsp;
-            <input type="text" name="NooP" id="NooP" value="" size="22" style="width:25px" />
-          </p>
           <p>
             <label for="date"><small>From Date</small></label>
 		&nbsp;&nbsp;
@@ -120,7 +112,13 @@
             <label for="time"><small>To</small></label>
             <input type="text" name="time" id="time" value="" style="width:25px" size="10" />
           </p>
+	 
+	 <p>
+	        <label for="speaker"><small>Speakers </small></label>
+		&nbsp;&nbsp;
+            <textarea name="speaker" id="speaker" cols="100%" rows="10"></textarea>
 
+          </p>
 
           <p>
 	        <label for="venue"><small>Venue</small></label>
@@ -129,11 +127,6 @@
 
           </p>
 
-          <p>
-	        <label for="comments"><small>Comments</small></label>
-		&nbsp;&nbsp;
-            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
-	</p>
           <p>
             <input name="submit" type="submit" id="submit" value="Submit" />
           </p>

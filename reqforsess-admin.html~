@@ -27,7 +27,7 @@
       <form action="#" method="post">
         <fieldset>
           <legend>Site Search</legend>
-          <input value="Search the site" onfocus="this.value=(this.value=='Search the site')? '' : this.value ;" type="text" style="width:82px">
+          <input value="Search the site" onfocus="this.value=(this.value=='Search the site')? '' : this.value ;" type="text">
           <input name="go" id="go" value="GO" type="submit">
         </fieldset>
       </form>
@@ -54,12 +54,12 @@
       <div id="comments">
 
       <div id="respond">
-        <form action="#" method="post">
+        <form action="mngsessreq.html" method="post">
           <p>
             <label for="technology"><small>Technology</small></label>
 		&nbsp;&nbsp;
 		<select>
-			<option value="C#.NET">C# .NET</option>
+			<option selected value="C#.NET">C# .NET</option>
 			<option value="VB.NET">VB .NET</option>
 			<option value="ASP.NET">ASP.NET</option>
 			<option value="ASP.NET">Other..</option>
@@ -72,7 +72,7 @@
           <p>
             <label for="sessiontype"><small>Session Type</small></label>
 		&nbsp;&nbsp;
-            <input type="radio" name="sessiontype" id="sessiontype" value="Session" />
+            <input type="radio" checked  name="sessiontype" id="sessiontype" value="Session" />
             <label for="sessiontype"><small>Session</small></label>
             <input type="radio" name="sessiontype" id="sessiontype" value="WorkShop" />
             <label for="sessiontype"><small>WorkShop</small></label>
@@ -85,7 +85,7 @@
           <p>
             <label for="sessmode"><small>Mode</small></label>
 		&nbsp;&nbsp;
-            <input type="radio" name="sessmode" id="sessmode" value="Session" />
+            <input type="radio"  checked name="sessmode" id="sessmode" value="Session" />
             <label for="sessmode"><small>Hands On</small></label>
             <input type="radio" name="sessmode" id="sessmode" value="WorkShop" />
             <label for="sessmode"><small>Theory + Hands On</small></label>
@@ -98,42 +98,66 @@
           <p>
             <label for="NooP"><small>No of Participants</small></label>
 		&nbsp;&nbsp;
-            <input type="text" name="NooP" id="NooP" value="" size="22" style="width:25px" />
+            <input type="text" name="NooP" id="NooP" value="60" size="22" style="width:25px" />
           </p>
           <p>
             <label for="date"><small>From Date</small></label>
 		&nbsp;&nbsp;
-            <input type="text" name="date" id="date" value="" size="22" />
+            <input type="text" name="date" id="date" value="July 19th 2014" size="22" />
           </p>
 
           <p>
             <label for="date"><small>To Date</small></label>
 		&nbsp;&nbsp;
-            <input type="text" name="date" id="date" value="" size="22" />
+            <input type="text" name="date" id="date" value="July 19th 2014" size="22" />
           </p>
 	
           <p>
             <label for="date"><small>Duration</small></label>
 		&nbsp;&nbsp;
 
-            <input type="text" name="time" id="time" value="" style="width:25px" size="10" />
+            <input type="text" name="time" id="time" value="02:00 PM" style="width:25px" size="10" />
             <label for="time"><small>To</small></label>
-            <input type="text" name="time" id="time" value="" style="width:25px" size="10" />
+            <input type="text" name="time" id="time" value="04:00 PM" style="width:25px" size="10" />
           </p>
 
 
           <p>
 	        <label for="venue"><small>Venue</small></label>
 		&nbsp;&nbsp;
-            <textarea name="venue" id="venue" cols="100%" rows="10"></textarea>
+            <textarea name="venue" id="venue" cols="100%" rows="10">
+Dayananda Sagar College of Engineering College Rd, Shavige Malleshwara Hills, Kumaraswamy Layout, Bangalore, Karnataka - 560078 
+
+</textarea>
 
           </p>
-
           <p>
 	        <label for="comments"><small>Comments</small></label>
 		&nbsp;&nbsp;
-            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+            <textarea name="comment" id="comment" cols="100%" rows="10">
+Quite Urgent
+		</textarea>
 	</p>
+ <p>
+	        <label for="speaker"><small>Speakers </small></label>
+		&nbsp;&nbsp;
+            <textarea name="speaker" id="speaker" cols="100%" rows="10">Vignesh Prabhu, Jobless 
+Ph No : 000-000-000
+Other Detail : Free Software movment Karnataka Join Secr, Not married.
+</textarea>
+
+          </p>
+          <p>
+            <label for="status"><small>Status</small></label>
+		&nbsp;&nbsp;
+
+<select>
+			<option value="C#.NET">Approved</option>
+			<option value="VB.NET">Cancelled</option>
+			<option value="ASP.NET">On Hold</option>
+		</select>
+	</p>
+
           <p>
             <input name="submit" type="submit" id="submit" value="Submit" />
           </p>

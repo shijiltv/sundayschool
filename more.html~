@@ -27,7 +27,7 @@
       <form action="#" method="post">
         <fieldset>
           <legend>Site Search</legend>
-          <input value="Search the site" onfocus="this.value=(this.value=='Search the site')? '' : this.value ;" type="text" style="width:82px">
+          <input value="Search the site" onfocus="this.value=(this.value=='Search the site')? '' : this.value ;" type="text">
           <input name="go" id="go" value="GO" type="submit">
         </fieldset>
       </form>
